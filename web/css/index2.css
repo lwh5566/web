@@ -1,0 +1,114 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+i, b, em {
+  font-style: normal; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: "a";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both; }
+
+.tb {
+  width: 0;
+  height: 0;
+  border-left: 4px transparent solid;
+  border-right: 4px transparent solid;
+  border-top: 7px solid #cecece;
+  position: absolute;
+  right: -3px;
+  top: 12px; }
+
+.top {
+  width: 100%;
+  height: 31px;
+  background: #f5f4f4;
+  border-bottom: 1px solid #e6e6e6; }
+
+.top-con {
+  width: 1263px;
+  height: 31px;
+  margin: 0 auto;
+  background: pink;
+  color: #7f7f7a; }
+  .top-con span {
+    float: left;
+    line-height: 31px; }
+    .top-con span em {
+      padding-left: 5px; }
+    .top-con span a {
+      color: #e3393c;
+      margin-left: 10px; }
+  .top-con .dl {
+    float: left;
+    width: 200px;
+    margin-left: 44px; }
+    .top-con .dl li {
+      float: left;
+      line-height: 31px;
+      padding: 0 8px; }
+    .top-con .dl a {
+      color: #7f7f7a; }
+    .top-con .dl .dlzc span {
+      width: 10px;
+      margin-right: 8px; }
+  .top-con .dh {
+    float: right; }
+    .top-con .dh li {
+      float: left;
+      line-height: 31px;
+      padding: 0 8px; }
+    .top-con .dh li:nth-of-type(1), .top-con .dh li:nth-of-type(5), .top-con .dh li:nth-of-type(6) {
+      position: relative; }
+      .top-con .dh li:nth-of-type(1):hover, .top-con .dh li:nth-of-type(5):hover, .top-con .dh li:nth-of-type(6):hover {
+        background-color: #fff; }
+        .top-con .dh li:nth-of-type(1):hover ol, .top-con .dh li:nth-of-type(5):hover ol, .top-con .dh li:nth-of-type(6):hover ol {
+          display: block; }
+      .top-con .dh li:nth-of-type(1) .tb, .top-con .dh li:nth-of-type(5) .tb, .top-con .dh li:nth-of-type(6) .tb {
+        width: 0;
+        height: 0;
+        border-left: 4px transparent solid;
+        border-right: 4px transparent solid;
+        border-top: 7px solid #cecece;
+        position: absolute;
+        right: -3px;
+        top: 12px; }
+    .top-con .dh a {
+      color: #7f7f7a; }
+    .top-con .dh ol {
+      position: absolute;
+      display: none; }
+      .top-con .dh ol li {
+        width: 85px; }
+
+/*# sourceMappingURL=index2.css.map */
