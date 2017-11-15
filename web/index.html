@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		
 	</head>
 	<body>
 <!-------------top------------------>
@@ -18,27 +19,84 @@
 					<li class="dlzc"><span>|</span><a href="#">免费注册</a></li>
 				</ul>
 				<ul class="dh">
-					<li >
+					<li id="dh1">
 						<a href="#">我的中酒网</a>
 						<b class="tb"></b>
-						<ol>
+						<ol id="ol1">
 							<li><a href="#">已买到的商品</a></li>
 							<li><a href="#">我关注的商品</a></li>
 							<li><a href="#">我收藏的商品</a></li>
 						</ol>
 					</li>
 					<li><a href="#">购物车0件</a></li>
-					<li>
+					<li id="wx">
 						<a href="#">微信端</a>
+						<b id="wximg"><img src="images/wx.jpg"></b>
 					</li>
-					<li><a href="#">APP</a></li>
-					<li>
+					<li id="ewm">
+						<a href="#">APP</a>
+						<div id="ewmimg">
+							<img width="90px" height="90px"src="images/mob.jpg">
+							<h3 style="text-align: center">扫描二维码</h3>
+							<p  style="text-align: center">下载手机客户端<p>
+						</div>
+					</li>
+					<li id="mj">
 						<a href="#">卖家中心</a>
 						<b class="tb"></b>
+						<ol id="mjzx">
+							<li><a href="#">商家入驻</a></li>
+							<li><a href="#">已卖出的商品</a></li>
+							<li><a href="#">管理商品</a></li>
+						</ol>
 					</li>
-					<li>
+					<li id="wzdh">
 						<a href="#">网站导航</a>
 						<b class="tb"></b>
+						<div id="dh">
+							<ul>
+								<li>
+									<h3>买酒</h3>
+									<div class="zl">
+										<a href="#">白酒</a>
+										<a href="#">红酒</a>
+										<a href="#">洋酒</a>
+										<a href="#">葡萄酒</a>
+										<a href="#">整箱</a>
+										<a href="#">婚庆</a>
+									</div>
+								</li>
+								<li class="list2">
+									<h3>品牌</h3>
+									<div class="zl">
+										<a href="#">茅台</a>
+										<a href="#">五粮液</a>
+										<a href="#">洋河</a>
+										<a href="#">天佑德</a>
+										<a href="#">红星</a>
+										<a href="#">牛栏山</a>
+										<a href="#">泸州老窖</a>
+										<a href="#">拉菲</a>
+										<a href="#">张裕</a>
+									</div>
+								</li>
+								<li class="list3">
+									<h3>其他</h3>
+									<div class="other">
+										<a href="#">帮组中心</a>
+										<a href="#">品牌资讯</a>
+										<a href="#">品牌导航</a>
+										<a href="#">新品推荐</a>
+										<a href="#">积分商城</a>
+										<a href="#">APP下载</a>
+									</div>
+								</li>
+								<li class="list4">
+									<p>订购热线：<b>400-798-9999</b></p>
+								</li>
+							</ul>
+							
+						</div>
 					</li>
 					<li><a href="#">订购热线：400-798-9999</a></li>
 					
@@ -46,6 +104,55 @@
 				</ul>
 			</div>
 		</div>
-		
+<!-------------dt------------------>	
+<div class="dt">
+	<div class="dtcont"></div>
+</div>
+<!-------------header------------------>
+<div class="header">
+	<div class="headercont">
+		<div><a href="#"><img src="images/logo.png"/></a></div>
+		<div><a href="#"><img src="images/gif.gif"/></a></div>
+		<div class="search">
+			<div class="searchcont">
+				<ul id="spdp">
+					<li>商品</li>
+					<li>店铺</li>
+				</ul>
+				<label>商品<i class="tb"></i></label>
+				<input type="text" name="" class="searchbox" value="西凤" />
+				<input type="submit" name="" class="subbox" value="搜索" />
+				
+			
+			</div>
+		</div>
+    
+
+
+		<div><a href="#"><img src="images/201610211352319102520.png"/></a></div>
+	</div>
+</div>
+<!-------------nav------------------>
+<div class="nav">
+	<div class="navcon">
+		<div class="qbsp">
+			<a href ="#">全部商品</a>
+		</div>
+		<div class="navcl">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">双11特惠</a></li>
+				<li><a href="#">白酒专区</a></li>
+				<li><a href="#">红洋酒专区</a></li>
+				<li><a href="#">天佑德青稞酒</a></li>
+				<li><a href="#">精品推荐</a></li>
+			</ul>
+			
+		</div>
+	</div>
+</div>
 	</body>
 </html>
+<script src="public1.js"></script>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="index.js"></script>
