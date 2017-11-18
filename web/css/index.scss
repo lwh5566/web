@@ -206,11 +206,11 @@
 /*...................dt................*/
 .dt{
     width: 100%;
-    height:90px;
+    min-height:90px;
     background: pink;  
 }
 .dtcont{
-        height:90px;
+        min-height:90px;
         background: url(../images/dt.jpg) no-repeat center;
         margin:0 auto;
         img{
@@ -222,7 +222,7 @@
 /*...................header................*/
 .header{
     width:100%;
-    height:120px;
+    min-height:120px;
     background:#fff;
 }
 .headercont{
@@ -354,7 +354,7 @@
         }
         .navlist{
             //display:none;
-           width:200px;
+           width:201px;
            height:490px;
            background: #3d4851;
                .item{
@@ -594,126 +594,570 @@
     }
 }
 /*...................floor................*/
-.floor{
+.floorbox{
     width:100%;
-    
-    .floorbox{
-        width: 1190px;
+    min-height: 600px;
+    background: pink;
+    .floor{
         margin:0 auto;
-        
-        .floor-hd{
-        margin:0 auto;
-        width: 1190px;
-        height:32px;
-        border-bottom: 1px solid #c9c9c9;
-        background-color: #fff;
-        margin-bottom: 4px;
-        h3{
-            height: 18px;
-            width: 20%;
-            float: left;
-            line-height: 18px;
-            color: #3d4048;
-            font-size: 16px;
-            border-left: 4px solid #f00f34;
-            padding-left: 12px;
-            font-weight: bold;
+        width:1190px;
+        min-height: 450px;
+        .floor-ht{
+            width: 1190px;
+            min-height:32px;
+            border-bottom: 1px solid #c9c9c9;
+            margin-bottom: 4px;
+
+                h3{
+                    height: 18px;
+                    width: 20%;
+                    float: left;
+                    line-height: 18px;
+                    color: #3d4048;
+                    font-size: 16px;
+                    border-left: 4px solid #f00f34;
+                    padding-left: 12px;
+                    font-weight: bold;
+                }
+                ul{
+                    float:right;
+                    line-height: 32px;
+                     margin-right: 20px;
+                     li{
+                        float:left;
+                        margin-left:50px;
+                        font-size:16px;
+                        color: #2c2c2c;
+                        cursor: pointer;
+                        /* max-width: 100px; */
+                        height: 32px;
+                        position: relative;    
+                     }
+                     li:nth-child(1){
+                         s{
+                            background: url(../images/himall_web_add.png) no-repeat;
+                            width: 10px;
+                            height: 6px;
+                            position: absolute;
+                            top: 27px;
+                            right: 42%;
+                         }
+                     }
+                }
         }
-        ul{
-                float:right;
-                line-height: 32px;
-                 margin-right: 20px;
-                 li{
+        .leftside{
+                width:230px;
+                min-height:450px;
+                background: orange;
+                float: left;
+            .bjt1{
+                position:relative;
+                .city{
+                    width:186px;
+                    min-height:98px;
+                    margin:23px;
+                    position: absolute;
+                    top:160px;
+                    left:0;
+                    li{
+                        line-height:24px;
+                    }
+                    li:nth-of-type(2){
+                        margin-left: 20px;
+                    }
+                    li:nth-of-type(4){
+                        margin-left: 20px;
+                    }
+                }
+                .smalllogo{
+                    width: 220px;
+                    min-height:150px;
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    padding-left: 10px;
+                    
+                    
+                    li{
+                        float: left;
+                        margin:3px 3px;
+                        
+                    }
+                }
+            }   
+        }
+        .centerimg{
+            width:470px;
+            height:450px;
+            background:blue;
+            float: left;
+            margin-left:5px;
+            img{
+               
+                width:100%;
+                height: 100%;
+            }
+        }
+        .rightimg{
+            width:480px;
+            height:450px;
+            float: right;
+            ul{
+                margin-left:5px;
+                li{
+                   float:left;
+                  
+                }
+                li:nth-of-type(1),li:nth-of-type(3){
+                    padding-right: 5px;
+                }
+                li:nth-of-type(3),li:nth-of-type(4){
+                    margin-top: 4px;
+                }
+            }
+        }
+        .bottomimg{
+           
+            ul{
+                li{
                     float:left;
-                    margin-left:50px;
+                    margin-top: 10px;
+                    margin-bottom:30px;
+                }
+                li:nth-of-type(2),li:nth-of-type(3){
+                    margin:10px 5px;
+                }
+            }
+        }
+        
+    }
+    
+}
+/*...................旗舰店............*/
+.qjd{
+    width:100%;
+    min-height:350px;
+    _height:300px;
+    .qjdcont{
+        margin:0 auto;
+        width:1190px;
+        min-height:300px;
+        background:yellow;
+        .qjdleft{
+            width:280px;
+            min-height:300px;
+            background: pink;
+            float:left;
+            
+        }
+        .qjdcenter{
+            width:630px;
+            min-height:345px;
+           
+            float:left;
+            border-top: 2px solid #f3f3f3;
+            border-bottom: 2px solid #f3f3f3;
+            b{
+                background:url(../images/tb1.png) no-repeat center;
+                width:10px;
+                height:20px;
+            }
+            
+           ul{
+               overflow: hidden;
+                margin:36px;
+                li:nth-of-type(5){
+                    background: none;
+                }
+               li{
+                   float:left;
+                   width: 110px;
+                   height:80px;
+                 
+                   a{
+                      width: 111px;
+                      height: 62px;
+                      margin-top: 20px;
+                      display: inline-block;
+                      background: url(../images/brand_03.png) no-repeat right center;
+                      img{
+                          width: 100px;
+                          height: 50px;
+                          margin: 6px auto;
+                      }
+                   }
+               }
+           }
+        }
+        .qjdright{
+            width:280px;
+            min-height:350px;
+            background: lightblue;
+            float:right;
+        }
+    }
+}
+/*...................ensure...........*/
+.ensure{
+    width: 100%;
+    height: 108px;
+    border-bottom: 1px solid #d6d6d6;
+    background: #f8f8f8;
+    .ensurecont{
+        width: 1190px;
+        height: 108px;
+        margin:0 auto;
+        dl{
+            width:166px;
+            height:45px;
+            padding-top:33px;
+            margin-right: 30px;
+            float: left;
+             dd:nth-of-type(1){
+                 font-size: 16px;
+                 color: #313131;
+                 padding-bottom: 2px;
+           }
+            dt{
+               float:left;
+                width: 55px;
+                height: 40px;
+               background: url(../images/icon1.png )no-repeat  0 -37px  ;
+              
+            dd{
+                float:left;  
+             }
+             
+           }
+         
+        }
+        dl:nth-of-type(2) dt{
+            background: url(../images/icon1.png )no-repeat  -57px -37px  ;
+        }
+        dl:nth-of-type(3) dt{
+            background: url(../images/icon1.png )no-repeat  -125px -37px  ;
+        }
+         dl:nth-of-type(4) dt{
+            background: url(../images/icon1.png )no-repeat  -181px -37px  ;
+        }
+        dl:nth-of-type(5) dt{
+            background: url(../images/icon1.png )no-repeat  -241px -37px  ;
+        }
+        dl:nth-of-type(6) dt{
+            background: url(../images/icon1.png )no-repeat  -301px -37px  ;
+        }
+    }
+}
+/*...................footer...........*/
+.footer{
+    width:100%;
+    min-height: 230px;
+    _height:230px;
+    .footernav{
+        width:1190px;
+        min-height:240px;
+        background:#f3f3f3;
+        margin: 0 auto;
+        dl{
+            width:120px;
+            height:180px;
+            background: blue;
+            float: left;
+            margin-top: 20px;
+            dd{
+                width: 100px;
+                height: 40px;
+            }
+            dd:nth-of-type(1){
+                width: 110px;
+                height: 40px;                
+                background: url(../images/icon1.png )no-repeat  0 -92px  ;
+            }
+             dd:nth-of-type(2){
+       
+                background: url(../images/icon1.png )no-repeat  -111px -92px  ;
+            }
+             dd:nth-of-type(3){
+                background: url(../images/icon1.png )no-repeat  -246px -92px  ;
+            }
+        }
+        .rightnav{
+            width:1050px;
+            height:180px;
+            background: orange;
+            padding-top:20px;
+            margin-left: 20px;
+            float: left;
+            ul{
+                li{
+                    font-size: 12px;
+                    height:30px;
+                    line-height: 30px;
+                    margin:0 30px;
+                    a{
+                        color:#666;
+                    }
+                }
+            }
+            ul:nth-of-type(1){
+                
+                float:left;
+                li:nth-of-type(1){
+                    font-size:15px;
+                    font-weight:600;
+                    
+                   
+                }
+            }
+             ul:nth-of-type(2){
+                float:left;
+                li:nth-of-type(1){
+                    font-size:15px;
+                    font-weight:600;
+                }
+            }
+             ul:nth-of-type(3){
+                float:left;
+                li:nth-of-type(1){
+                    font-size:15px;
+                    font-weight:600;
+                }
+            }
+             ul:nth-of-type(4){
+                float:left;
+                li:nth-of-type(1){
+                    font-size:15px;
+                    font-weight:600;
+                }
+            }
+             ul:nth-of-type(5){
+                float:left;
+                li:nth-of-type(1){
                     font-size:16px;
-                    color: #2c2c2c;
-                    cursor: pointer;
-                    /* max-width: 100px; */
-                    height: 32px;
-                    position: relative;                
-                 }
-                 li:nth-child(1){
-                     s{
-                        background: url(../images/himall_web_add.png) no-repeat;
-                        width: 10px;
-                        height: 6px;
-                        position: absolute;
-                        top: 27px;
-                        right: 42%;
-                                             }
-                 }
+                    font-weight:600;
+                }
+            }
+            ul:nth-of-type(6){
+                float:right;
+                li:nth-of-type(1){
+                    font-size:15px;
+                    font-weight:600;
+                   
+                   a{
+                       margin-left:8px;
+                   }
+                }
+            }
+            ul:nth-of-type(7){
+                float:left;
+                margin-left: 20px;
+                 .li7{
+                font-size:15px;
+                font-weight:600;
+                color:#313131;
+                a{
+                    margin-left:8px;
+                }
+            }
+            }
         }
        
     }
     
-  }
-   .xz{
-        width:1190px;
-        background: pink;
-        margin:0 auto;
-        .xz-left{
-            width:230px;
-            height:450px;
-            background: #eee;
-            position: relative;
-            .leftcont{
-                width: 230px;
-                height: 124px;
-                position: absolute;
-                left: 0;
-                bottom: 185px;
-                background: blue;
-                table{
-                        width: 186px;
-                        height: 98px;
-                        margin: 26px auto;
-                       
-                            a{
-                                color: #292929;
-                                font-size: 12px;
-                            }
-                        tr{
-                            display: table-row;
-                            vertical-align: inherit;
-                            border-color: inherit;
-                        }
-                        td{
-                            height: 24px;
-                            width: 83px;
-                            text-align: left;
-                            /* line-height: 24px; */
-                            float: left;
-                            overflow: hidden;
-                            text-indent:2;
-                        }
-                }
-                .xlg{
-                        width: 188px;
-                        height: 142px;
-                        float: left;
-                        position: relative;
-                        margin: 20px 0 0 0;
-                        ul{
-                           
-                            li{
-                                   float: left;
-                                  
-                                    margin:0  6px;
-                                    margin-bottom: 6px;
-                                    background: #fff;
-                                
-                                img{
-                                        width: 90px;
-                                        height: 45px;
-                                        vertical-align: middle;
-                                        display: inline;
-                                      
-                                                                    }
-                            }
-                        }
+}
+/*...................bottom...........*/
+.bottomnav{
+        width:100%;
+        height:40px;
+        background:  #313131;;
+        .dh{
+            width:1190px;
+            height:40px;
+            margin:0 auto;
+            background:  #313131;;
+            
+            ul{
+                margin-left: 400px;
+                li{
+                    float:left;
+                    line-height: 40px;
+                    margin:0 3px;
+                    a{
+                        color:#fff;
+                    }
                 }
             }
         }
-    }  
+        
+      } 
+ 
+.bx{
+    width:100%;
+    height:40px;
+   .bxcont{
+       margin: 0 auto;
+       width:1190px;
+       height:50px;
+       background: pink;
+       p{
+           text-align: center;
+           line-height: 50px;
+       }
+   }
+   p{
+       padding:10px 0;
+   }
+  .bottom{
+       margin:0 auto;
+       width:1190px;
+       height:50px;
+       background: red;
+       overflow: hidden;
+       ul{ 
+          margin-left:220px;
+           li{ 
+               height:50px;
+               float:left;
+               padding:5px 5px;
+               line-height:50px;
+           }
+       }
+   } 
+}
+/*...................二级菜单...........*/
+#classify{
+    width:780px;
+    height:490px;
+    background:#fff;
+    float:left;
+    position: absolute;
+    top:0;
+    z-index:100;
+    left:307px;
+    display:none;
+    #classifyleft{
+        width:560px;
+        height:490px;
+        padding: 0 20px;
+        float:left;
+        z-index:999999999;
+        ul{
+            li{
+                a{
+                    color:#666;
+                }
+            }
+            h3{
+                 width:560px;
+                 height:36px;
+                 border-bottom:1px solid #000;
+                 line-height:36px;
+                 font-weight:600;
+            }
+        }
+         ul:nth-of-type(1){
+             width:560px;
+             min-height: 30px;
+             _height:30px;
+             overflow: hidden;
+            li{
+            float:left;
+            width:90px;
+           
+            padding:8px 0;
+        }
+    }
+    ul:nth-of-type(2){
+            width:560px;
+            min-height:30px;
+             _height:30px;
+            overflow: hidden;
+            li{
+                float:left;
+                width:90px;
+                padding:8px 0;
+            }
+        
+        
+    }
+    ul:nth-of-type(3){
+        width:560px;
+        min-height:130px;
+        _height:130px;
+         border-bottom:1px dashed #eee;
+        li{
+            float:left;
+            width:90px;
+           padding:8px 0;
+           
+        }
+    }
+  }
+   #classifyright{
+      width:180px;
+      height:490px;
+      background:#eee; 
+      float:right;
+      z-index:999999999;
+      dl{
+          dt{
+              height:36px;
+              line-height: 36px;
+              text-align: center;
+              color:#666;
+            
+          }
+      }
+   }    
+}
+/*...................侧栏...........*/
+.sidebox{
+    width:30px;
+    height:100%;
+    background:#313131;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index: 9;
+    }
+/*...................楼层...........*/
+#lc{
+    width:37px;
+    height:160px;
+    display: none;
+    position:fixed;
+    left:50px;
+    top:50%;
+    
+    ul{
+        text-align: center;
+        li{
+            position:relative;
+            width:37px;
+            height:40px;
+            line-height: 40px;
+            border-bottom:1px dashed #eee;
+                
+            span{
+                position: absolute;
+                left:0;
+                top:0;
+                width:37px;
+                height:40px;
+                line-height: 40px;
+                display:none;
+                z-index: 5;
+                background:red ;
+            }
+            em{
+                
+            }
+        }
+        li:nth-of-type(1){
+            background: red;
+              }
+        li:nth-of-type(4){
+            border:0;
+        }
+    }
 }
