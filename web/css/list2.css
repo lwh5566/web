@@ -1,0 +1,274 @@
+.banner1 {
+  width: 100%;
+  height: 412px;
+  background: url(../images/dou1.jpg) no-repeat center; }
+
+.banner2 {
+  width: 100%;
+  height: 352px;
+  background: url(../images/dou2.jpg) no-repeat center top; }
+
+.banner3 {
+  width: 100%;
+  height: 309px;
+  background: url(../images/dou3.jpg) no-repeat center top; }
+
+.banner3 {
+  width: 100%;
+  height: 74px;
+  background: url(../images/mid1.jpg) no-repeat center top; }
+
+.banner4 {
+  width: 100%;
+  height: 97px;
+  background: url(../images/mid2.jpg) no-repeat center top; }
+
+.banner5 {
+  width: 100%;
+  height: 141px;
+  background: url(../images/mid3.jpg) no-repeat center top; }
+
+.banner6 {
+  width: 100%;
+  height: 1331px;
+  background: url(../images/bg1.jpg) no-repeat center top; }
+  .banner6 .banner_1 i, .banner6 .banner_2 i, .banner6 .banner_3 i {
+    color: #fe0100;
+    font-size: 60px;
+    font-weight: 900; }
+  .banner6 .banner_1 {
+    margin: 0 auto;
+    width: 990px;
+    height: 377px;
+    position: relative; }
+    .banner6 .banner_1 i {
+      position: absolute;
+      top: 178px;
+      right: 232px; }
+  .banner6 .banner_2 {
+    margin: 0 auto;
+    width: 990px;
+    height: 377px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .banner6 .banner_2 .left {
+      float: left;
+      width: 490px;
+      height: 553px;
+      margin-right: 10px;
+      position: relative;
+      margin-bottom: 10px; }
+      .banner6 .banner_2 .left i {
+        position: absolute;
+        top: 480px;
+        right: 258px; }
+    .banner6 .banner_2 .right {
+      float: left;
+      position: relative; }
+      .banner6 .banner_2 .right i {
+        position: absolute;
+        top: 480px;
+        right: 258px; }
+  .banner6 .banner_3 {
+    margin: 0 auto;
+    height: 247px;
+    position: relative; }
+    .banner6 .banner_3 img {
+      margin: 0 auto; }
+    .banner6 .banner_3 i {
+      position: absolute;
+      top: 355px;
+      left: 932px; }
+
+.bannercont {
+  width: 100%;
+  min-height: 1000px;
+  background: url(../images/bg3.jpg) repeat center top; }
+  .bannercont .jxbj {
+    width: 990px;
+    background: yellow;
+    margin: 0 auto; }
+  .bannercont .wly {
+    width: 990px;
+    min-height: 377px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10px; }
+    .bannercont .wly i {
+      color: #fe0100;
+      font-size: 60px;
+      font-weight: 900;
+      position: absolute;
+      top: 178px;
+      right: 232px; }
+  .bannercont .mt {
+    width: 990px;
+    min-height: 533px;
+    margin: 0 auto;
+    background: blue; }
+    .bannercont .mt .left1 {
+      width: 990px;
+      min-height: 550px;
+      margin-top: 10px; }
+      .bannercont .mt .left1 .L i, .bannercont .mt .left1 .R i {
+        position: absolute;
+        top: 480px;
+        right: 258px;
+        color: #fe0100;
+        font-size: 60px;
+        font-weight: 900; }
+      .bannercont .mt .left1 .L {
+        float: left;
+        position: relative; }
+      .bannercont .mt .left1 .R {
+        float: right;
+        position: relative; }
+  .bannercont .smallpic {
+    width: 990px;
+    min-height: 500px;
+    margin: 0 auto;
+    background: url(../images/bg3.jpg) repeat center top; }
+    .bannercont .smallpic .all {
+      width: 990px;
+      min-height: 450px;
+      background: orange;
+      overflow: hidden; }
+      .bannercont .smallpic .all .first {
+        width: 990px;
+        min-height: 380px; }
+        .bannercont .smallpic .all .first dl:nth-of-type(2) {
+          margin-left: 10px;
+          margin-right: 10px; }
+        .bannercont .smallpic .all .first dl:nth-of-type(3) {
+          margin-right: 10px;
+          margin-top: 10px; }
+        .bannercont .smallpic .all .first dl {
+          float: left;
+          width: 220px;
+          height: 360px;
+          background: green;
+          position: relative;
+          padding: 10px;
+          margin-top: 10px; }
+          .bannercont .smallpic .all .first dl dt {
+            width: 220px;
+            height: 230px;
+            background: black;
+            margin-bottom: 10px; }
+            .bannercont .smallpic .all .first dl dt img {
+              width: 100%;
+              height: 100%; }
+          .bannercont .smallpic .all .first dl dd:nth-of-type(1) {
+            width: 216px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 16px; }
+          .bannercont .smallpic .all .first dl dd:nth-of-type(2) {
+            width: 216px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 18px;
+            color: #f60e34;
+            background: #ffd2c1;
+            text-align: center; }
+          .bannercont .smallpic .all .first dl dd:nth-of-type(3) {
+            margin-top: 20px; }
+            .bannercont .smallpic .all .first dl dd:nth-of-type(3) span {
+              float: right;
+              margin-right: 5px; }
+            .bannercont .smallpic .all .first dl dd:nth-of-type(3) b {
+              float: left;
+              font-size: 15px;
+              font-family: Impact;
+              color: #f60e34; }
+  .bannercont .hslbg {
+    width: 990px;
+    min-height: 380px;
+    background: red;
+    margin: 0 auto; }
+    .bannercont .hslbg dl {
+      float: left;
+      width: 313px;
+      height: 365px;
+      background: green;
+      position: relative;
+      padding: 8px; }
+      .bannercont .hslbg dl dt {
+        width: 313px;
+        height: 275px;
+        background: black; }
+        .bannercont .hslbg dl dt img {
+          width: 100%;
+          height: 100%; }
+      .bannercont .hslbg dl dd:nth-of-type(1) {
+        width: 313px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px; }
+      .bannercont .hslbg dl dd:nth-of-type(2) {
+        width: 313px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 18px;
+        color: #f60e34;
+        background: #ffd2c1;
+        text-align: center; }
+      .bannercont .hslbg dl dd:nth-of-type(3) {
+        margin-top: 10px; }
+        .bannercont .hslbg dl dd:nth-of-type(3) span {
+          float: right;
+          margin-right: 5px; }
+        .bannercont .hslbg dl dd:nth-of-type(3) b {
+          float: left;
+          font-size: 15px;
+          font-family: Impact;
+          color: #f60e34; }
+  .bannercont .more {
+    width: 990px;
+    height: 220px;
+    background: url(../images/bj6.png) no-repeat center; }
+  .bannercont .morepic {
+    width: 990px;
+    height: 283px; }
+    .bannercont .morepic ul li {
+      float: left;
+      margin: 3px; }
+
+.xd {
+  width: 130px;
+  height: 502px;
+  position: fixed;
+  background: url(../images/zuo1.png) no-repeat center;
+  top: 80px;
+  left: 20px;
+  z-index: 999;
+  display: none; }
+
+.you {
+  width: 140px;
+  height: 409px;
+  position: fixed;
+  background: url(../images/you1.png) no-repeat center;
+  top: 100px;
+  right: 20px;
+  z-index: 999;
+  display: none; }
+
+/*# sourceMappingURL=list2.css.map */

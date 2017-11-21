@@ -1,4 +1,15 @@
 window.onload = function(){
+	
+	$(".rr li").hover(function(){
+		$(this).css({"padding-right":"1px"})
+		       .siblings()
+		       .css({"padding-right":"0"})
+	},function(){
+		$(this).css({"padding-right":"0"})
+//		       .siblings()
+//		       .css({"padding-right":"0"})
+	})
+	
 	//表头
 	$("#dh1").mouseenter(function(){
 		$(this).find("#ol1")
@@ -34,8 +45,8 @@ window.onload = function(){
 		$(this).find("#mjzx")
 		       .css("display","none")
 	})	
-	/*
-	 */
+	
+	
 	$("#wzdh").mouseenter(function(){
 		$(this).find("#dh")
 		        .css("display","block")
@@ -106,7 +117,16 @@ window.onload = function(){
 			   .css({
 			   	"background":"red"
 			   })
-			   
+
+
+
+
+
+
+//
+/*$("small-banner").find(".img1").click(function(){
+	$(this).css("opacity",")
+})*/
 //二级菜单
 
 $("#classify").hover(function(){
@@ -300,7 +320,7 @@ $("#itemfour").mouseenter(function(){
 	</div>
 		`)
 })
-$("itemfour").mouseleave(function(){
+$("#itemfour").mouseleave(function(){
 	$(this).css("background","#3d4851")
 	$("#classify").hide();
 })
@@ -419,15 +439,23 @@ $("#lc li").click(function(){
 $("body ,html").animate({"scrollTop":_top},1000);
 //2 点击top  回到顶部
 $(".last li").click(function(){
-	$("body,html").animated({"scrollTop":0},1000);
+	$("body,html").animate({"scrollTop":0},1000);
 })
 })
 $(window).scroll(function(e){
-//	console.log($(".floorbox").offset().top)
-	if($(this).scrollTop() > 1314){
-	$("#lc").show();
+//console.log($(".floorbox").offset().top)
+	if($(this).scrollTop() > 1300 ){
+	$("#lc").show();	
 }
 })
+$(window).scroll(function(e){
+console.log($(".floorbox").offset().top)
+	if($(this).scrollTop() > 3800){
+	$("#lc").hide();	
+}
+})
+
+
 
 //$("#lc li:not(.last)").click(function(){
 //	$(this).addClass("active")
@@ -437,6 +465,26 @@ $(window).scroll(function(e){
 //		   .removeClass("active")
 //})
 //获取某个楼层的top值    根据这个top值 确定滚动条的位置
+//右侧栏
+$(function(){
+	$("#sideleftbox li").mouseenter(function(){
+		$(this).addClass("activeLi")
+		.find("i")
+		.addClass("activeLi")
+		$(this).find("span").css({"background":"#313131","display":"block"}).stop().animate({left:-75},1000);
+	
+	}).mouseleave(function(){
+		$(this).removeClass("activeLi")
+		
+		.find("i")
+		.removeClass("activeLi")
+		$(this).find("span").css("background","#7a6e6e").stop().animate({left : 45},600);
+	})
+})
 
+
+/*$(".footernav dd").mouseenter(function(){
+	$(this).css("opacity","0.9")
+})*/
 }
 	

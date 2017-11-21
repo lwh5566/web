@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style2.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont2/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="icobnfont3/iconfont.css"/>
+		
+	</head>
+	<body>
+		<div class="header">
+			<span><i class="iconfont icon-xin"></i><a href="javascript:;"></a>收藏商城</span>
+			
+			<ul>
+				<li class="loginbar">您好！欢迎来到商城！<a href="/login">[登录]</a>&nbsp;<a href="javascript:regist()">[免费注册]</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="zcbox">
+			<div class="logo">
+				<ul>
+					<li ><a href="#"><img src="images/logo.png"/></a></li>
+					<li><a href="#">欢迎注册</a> </li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="mt">
+			<div class="extra">
+				<span>
+					我已经注册，现在就&nbsp;
+					<a href="/login" class="flk13">登录</a>
+				</span>
+			</div>
+		</div>
+	</body>
+	<div class="mc">
+		 <form id="personRegForm" method="POST" onsubmit="return false;">
+              <div  class="cellphone">
+              	 <span><b>*</b>手机号码:</span>
+              	 <input class= "phone-text"  type="text" name="" id="phone" value="" />
+              	 <i class="iconfont icon-denglu"></i>
+              	 <em class="one">请输入手机号码</em>
+              </div> 
+               <div  class="txyz">
+              	 <span><b>*</b>图形验证:</span>
+              	 <input class= "txyz-text"  type="text" name="" id="txyz" value="" />
+              	 <em id="random"><i class="two">验证码错误</i></em>
+              	 
+              	 
+		  	   	
+              </div>
+               <div class="mm">
+              	 <span><b>*</b>请设置密码:</span>
+              	 <input class= "mm-password"  type="password" name="" id="pwd" value="" />
+              	 <i class="iconfont icon-suokai"></i>
+              	 <em class="three">6-20位字符</em>
+              </div>
+              <div class="qrmm">
+              	 <span><b>*</b>请确认密码:</span>
+              	 <input class= "qrmm-password"  type="password" name="" id="qrpwd" value="" />
+              	 <i class="iconfont icon-suokai"></i>
+              	 <em class="four">请再次输入密码</em>
+              </div>
+              <div class="sjyzm">
+              	 <span><b>*</b>手机验证码:</span>
+              	 <input class= "sjyzm-text"  type="text" name="" id="sjbtn" value="" />
+              	 <i class="iconfont icon-suokai"></i>
+              	 <input class="hqyzm"type="submit" name="" id="hq" value="获取验证码" />
+              	 <em class="five">请输入验证码</em>
+              	 <em class="five1">验证码错误</em>
+              	 
+              </div>
+		</form>
+		<div class="item">
+			<input type="checkbox" class="checkbox"  id="readme">
+			我已阅读并同意<<a href="javascript :;">用户注册协议</a>>
+			 <em class="six">请仔细阅读并同意以上协议</em>
+		</div>
+		<div class="zc-btn">
+			<input type="button" class="btn" value="立即注册">
+			
+		</div>
+	</div>
+	<div class="footer">
+		<p>Copyright©2017&nbsp;&nbsp; 中酒网 &nbsp;版权所有</p>
+	</div>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+	$("#phone").focus(function(){
+		$(this).css("border-color","green")
+		$(".one").css("display","block")
+	})
+	$("#txyz").focus(function(){
+		$(this).css("border-color","green")
+		//$(".one").css({"background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"})
+		//$(".phone-text").css("border-color","#ccc")
+		
+	})
+	$("#pwd").focus(function(){
+		$(this).css("border-color","green")
+		$(".three").css("display","block")
+		$(".two").css({"display":"block","background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"})
+		$(".txyz-text").css("border-color","#ccc")
+		
+	})
+	$("#qrpwd").focus(function(){
+		$(this).css("border-color","green")
+		$(".four").css("display","block")
+		$(".three").css({"display":"block","background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"})
+		$(".mm-password").css("border-color","#ccc")
+		
+	})
+	$("#sjbtn").focus(function(){
+		$(this).css("border-color","green")
+		$(".five").css("display","block")
+		$(".five1").css("display","none")
+		$(".four").css({"display":"none","background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"})
+		$(".qrmm-password").css("border-color","#ccc")
+		
+	})
+	/*$("#sjbtn").focus(function(){
+		$(this).css("border-color","green")
+
+		$(".four").css({"display":"none","background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"})
+		$(".qrmm-password").css("border-color","#ccc")
+		
+	})*/
+//	$(".checkbox").focus(function(){
+//		$(this).css("border-color","green")
+//	    $(".five").css("display","none")
+//		$(".six").css({"display":"block","background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"})
+//		$(".sjyzm-text").css("border-color","#ccc")
+//	})
+	//验证每一个表单项是否合法  如果不合法 就返回false 
+	
+	
+ //手机号码：
+
+  	var flagPhone = null;
+  	$("#phone").blur(function(){
+  		var str = $(this).val();
+  		var reg = /^1[45378]\d{9}$/;
+  		if(reg.test(str)){
+  			$(".one").css("display","none");
+  			flagPhone = true;
+  		}else{
+  			$(".one").html("请输入正确的手机号码");
+			flagName = false;
+  		}
+  	})
+ 
+ //请设置密码
+ var flagPwd = null;
+ $("#pwd").blur(function(){
+ 	var str = $(this).val();
+ 	var reg = /^\w{6,20}$/;
+ 	if(reg.test(str)){
+ 		$(".three").css("display","none");
+ 		flagPwd = true;
+ 	}else{
+ 		$(".two").css("display","none");
+ 		flagPwd = false;
+ 	}
+ })
+  var flagQrpwd = null;
+ $("#qrpwd").blur(function(){
+ 	
+ 	var str = $(this).val();
+ 	var reg = /^\w{6,20}$/;
+ 	if($("#pwd").val() == $("#qrpwd").val()){
+ 		$(".four").css("display","none");
+ 		$(".three").css("display","none");
+ 		flagQrpwd = true;
+ 	}else{
+ 		$(".three").css("display","none");
+ 		$(".four").html("两次输入密码不一致")
+ 		$(".four").css({"background":"#FFEBEB","border-color":"#ffbdbe","color":"#e3393c"});
+ 		flagQrpwd = false;
+ 	}
+ })
+//
+function ranCode(){
+	var arr = [0,1,2,3,4,5,6,7,8,9]
+	var str = "";
+	for(var i = 0; i < 4;i ++){
+		str += arr[Math.round(Math.random() * 9)]
+		
+	}
+	return str
+}
+
+var $yzm = ranCode();
+$("#random").html($yzm);
+$("#random").click(function(){
+	$yzm = ranCode();
+	$(this).html($yzm);
+})
+// $yzm = $("#random").html(ranCode());
+//验证码
+  	var flagTxyz = null;
+//	var yzm = randCode();
+  	$("#txyz").blur(function(){
+  		console.log($yzm)
+  		var str = $(this).val();
+  		if(str == $yzm){
+    			console.log(1);
+  			flagTxyz = true;
+  		}else{
+		$(".two").css("display","block");
+			flagName = false;
+  		}
+  	})
+var flagPhoneyzm = null;
+var $phoneyzm = ranCode(); 
+	$("#hq").click(function(){
+		alert($phoneyzm);
+	})	
+	$(".sjyzm-text").blur(function(){
+		$(".five1").css("display","none");
+		$(".five").css("display","none");
+//		console.log($phoneyzm);
+//		console.log($(".five"));
+		if($(".sjyzm-text").val() == $phoneyzm){
+			flagPhoneyzm = true;
+		}else{
+			flagPhoneyzm = false;
+		
+			$(".five").css("display","none");
+			$(".five1").css("display","block");
+		}
+	})
+	$(".btn").click(function(){
+		if( flagPhone && flagTxyz && flagPwd && flagQrpwd  && flagPhoneyzm){
+//			return true;
+			document.cookie = "username=" + $("#phone").val();
+         	document.cookie = "userpwd=" + $("#pwd").val();
+			alert("注册成功");
+			location.href="denglu.html";
+		}else{
+			console.log(2);
+//			return false;
+		}
+	})
+</script>

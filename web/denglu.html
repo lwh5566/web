@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont2/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="icobnfont3/iconfont.css"/>
+	</head>
+	<body>
+		<div class="dlbox">
+			<div class="logo">
+				<ul>
+					<li ><a href="#"><img src="images/logo.png"/></a></li>
+					<li><a href="#">欢迎登录</a> </li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="dly">
+			<ul>
+				<li class="logo-img"><img src="images/dly.png"/></li>
+				<li class="dly-top">
+					<p id="ewm"><a href="#">扫码登录</a><span>账号登录</span></p>
+					<dl id="smdl">
+						<dt><img src="images/ewm.gif"/></dt>
+						<dd>打开<i>中酒网App</i><e>扫描二维码</e></dd>
+						<dd><img src="images/sao2.png"/></dd>
+					</dl>
+					<ol>
+						<li><a  class="iconfont icon-qq" href="javascript:;">QQ</a></li>
+						<li><a  class="iconfont icon-weibo-oc" href="javascript:;">微博</a></li>
+						<li><a class="iconfont icon-weixin" href="javascript:;">微信</a></li>
+						<li ><a href="javascript:;">立即注册</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div> 
+		<div class="denglubox">
+			<div class="denglu">
+			<p><em class="iconfont icon-denglu">公共场所不建议自动登录，以防账号丢失</em></p>
+			<p>
+				<a href="javascript:;"><i  class="iconfont icon-denglu"></i><input type="text"  id="uname" value="用户名" /></a>
+			</p>
+			<p>
+				<a href="javascript:;"><i class="iconfont icon-suokai"></i><input type="text"  id="pwd" value="密码" /></a>
+			</p>
+			<p>
+				<a href="javascript:;"><i></i><input type="checkbox"  id="check" />自动登录</a>
+				<span><a href="javascript:;">忘记密码</a></span>
+			</p>
+			<p>
+				<a href="javascript:;"><input type="button"  id="btn" value="登录"/></a>
+				
+			</p>
+		</div>
+		</div>
+		
+	</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	//先清空所有标题样式
+	//留下当前操作的标题样式
+	//隐藏所有的内容
+	//留下当前
+	$("#ewm span").click(function(){
+		$(".denglubox").show();
+	})
+	$("#ewm a").click(function(){
+		$("#smdl").show();
+		$(".denglubox").hide();
+	})
+	
+	$("#btn").click(function(){		
+		var str = document.cookie;
+		var arr = str.split("; ");//字符串转成数组
+		var tname = "",tpwd = "";//定义两个空数组，存放cookie；
+		for( var i = 0 ; i < arr.length ; i ++ ){//循环遍历每一个数组
+			var info = arr[i].split("=");//["username","lll"],['userpwd','123']
+			if( info[0] == "username" ){
+				//得到用户名
+				tname = info[1];
+			}
+			if( info[0] == "userpwd" ){
+				tpwd = info[1];
+			}			
+		}
+//		console.log(tname);
+//		console.log(tpwd);
+		//比较判断  用户输入的用户名和密码 是否和cookie中存储的用户名和密码一致 
+		if( tname == $("#uname").val() && tpwd == $("#pwd").val() ){
+			alert("登录成功");
+			location.href = "index.html";
+			
+		}else{
+			alert("登录失败");
+		}
+
+	})
+/*$("#uname").focus(function(){
+	$(this).val(" ");
+})
+$("#pwd").focus(function(){
+	$(this).val(" ");
+})*/
+
+</script>

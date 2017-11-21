@@ -1,0 +1,262 @@
+body {
+  background: #eef3fa; }
+
+.header {
+  width: 990px;
+  height: 30px;
+  background: #eee;
+  margin: 0 auto; }
+  .header span {
+    float: left; }
+    .header span .iconfont {
+      color: orange; }
+  .header ul {
+    width: 300px;
+    height: 30px;
+    float: right; }
+  .header li {
+    line-height: 30px; }
+
+.zcbox {
+  width: 900px;
+  height: 80px;
+  padding: 0;
+  margin: 0 auto; }
+  .zcbox .logo ul li {
+    float: left;
+    width: 200px;
+    height: 60px; }
+  .zcbox .logo ul li:nth-of-type(1) {
+    padding-top: 14px; }
+  .zcbox .logo ul li:nth-of-type(2) {
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+    padding-top: 18px;
+    font-weight: 600; }
+    .zcbox .logo ul li:nth-of-type(2) a {
+      background: #eee;
+      margin-left: 10px;
+      color: #666;
+      padding: 10px; }
+
+.mt {
+  width: 990px;
+  height: 33px;
+  background: #eee;
+  position: relative;
+  margin: 0 auto; }
+  .mt .extra {
+    position: absolute;
+    right: 20px;
+    top: 5px; }
+    .mt .extra a {
+      color: #005AA0; }
+
+.mc {
+  width: 898px;
+  height: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding-left: 90px;
+  padding-top: 44px;
+  border: 1px solid #cccccc; }
+  .mc input {
+    border: 0; }
+  .mc .cellphone .iconfont, .mc .txyz .iconfont, .mc .mm .iconfont, .mc .qrmm .iconfont {
+    font-size: 24px; }
+  .mc .cellphone span, .mc .txyz span, .mc .mm span, .mc .qrmm span {
+    color: #999;
+    font-size: 14px; }
+    .mc .cellphone span b, .mc .txyz span b, .mc .mm span b, .mc .qrmm span b {
+      color: #e3393c; }
+  .mc .cellphone {
+    position: relative;
+    margin-bottom: 25px; }
+    .mc .cellphone span {
+      padding-right: 15px; }
+    .mc .cellphone .phone-text {
+      width: 238px;
+      height: 36px;
+      border: 1px solid #ccc; }
+    .mc .cellphone i {
+      position: absolute;
+      top: 4px;
+      left: 295px; }
+    .mc .cellphone em {
+      float: right;
+      margin-right: 320px;
+      display: block;
+      width: 238px;
+      height: 36px;
+      background: #eef3fa;
+      border: 1px solid #ccc;
+      color: #545454;
+      line-height: 36px;
+      display: none; }
+  .mc .txyz {
+    position: relative;
+    margin-bottom: 25px; }
+    .mc .txyz em {
+      display: block;
+      float: right;
+      width: 80px;
+      height: 32px;
+      line-height: 36px;
+      border: 1px solid #ccc;
+      margin-right: 606px;
+      background: yellowgreen; }
+      .mc .txyz em i {
+        margin-left: 127px;
+        display: block;
+        width: 238px;
+        height: 36px;
+        background: #eef3fa;
+        border: 1px solid #ccc;
+        color: #545454;
+        line-height: 36px;
+        display: none; }
+    .mc .txyz span {
+      padding-right: 15px; }
+    .mc .txyz .txyz-text {
+      width: 110px;
+      height: 36px;
+      border: 1px solid #cccccc; }
+  .mc .mm {
+    position: relative;
+    margin-bottom: 30px; }
+    .mc .mm em {
+      float: right;
+      margin-right: 320px;
+      display: block;
+      width: 238px;
+      height: 36px;
+      background: #eef3fa;
+      border: 1px solid #ccc;
+      color: #545454;
+      line-height: 36px;
+      font-size: 10px;
+      display: none; }
+    .mc .mm .mm-password {
+      width: 238px;
+      height: 36px;
+      border: 1px solid #cccccc; }
+    .mc .mm i {
+      position: absolute;
+      top: 4px;
+      left: 295px; }
+    .mc .mm .iconfont {
+      font-size: 24px; }
+  .mc .qrmm {
+    position: relative;
+    margin-bottom: 25px; }
+    .mc .qrmm em {
+      float: right;
+      margin-right: 320px;
+      display: block;
+      width: 238px;
+      height: 36px;
+      background: #eef3fa;
+      border: 1px solid #ccc;
+      color: #545454;
+      line-height: 36px;
+      font-size: 10px;
+      display: none; }
+    .mc .qrmm .qrmm-password {
+      width: 238px;
+      height: 36px;
+      border: 1px solid #cccccc; }
+    .mc .qrmm i {
+      position: absolute;
+      top: 4px;
+      left: 295px; }
+  .mc .sjyzm {
+    position: relative;
+    margin-bottom: 25px; }
+    .mc .sjyzm .five {
+      float: right;
+      margin-right: 320px;
+      width: 238px;
+      height: 36px;
+      background: #eef3fa;
+      border: 1px solid #ccc;
+      color: #545454;
+      line-height: 36px;
+      font-size: 10px;
+      display: none; }
+    .mc .sjyzm .five1 {
+      float: right;
+      margin-right: 320px;
+      width: 238px;
+      height: 36px;
+      background: #eef3fa;
+      border: 1px solid #ccc;
+      color: #545454;
+      line-height: 36px;
+      font-size: 10px;
+      display: none; }
+    .mc .sjyzm span {
+      color: #999;
+      font-size: 14px; }
+      .mc .sjyzm span b {
+        color: #e3393c; }
+    .mc .sjyzm .iconfont {
+      font-size: 24px; }
+    .mc .sjyzm .sjyzm-text {
+      width: 110px;
+      height: 36px;
+      border: 1px solid #cccccc; }
+    .mc .sjyzm i {
+      position: absolute;
+      top: 4px;
+      left: 170px; }
+    .mc .sjyzm .hqyzm {
+      width: 90px;
+      height: 40px;
+      background: #f4f4f4;
+      border: 1px solid #cccccc; }
+  .mc .item {
+    width: 815px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    padding-left: 85px; }
+    .mc .item em {
+      float: right;
+      margin-right: 320px;
+      display: block;
+      width: 238px;
+      height: 36px;
+      background: #eef3fa;
+      border: 1px solid #ccc;
+      color: #545454;
+      line-height: 36px;
+      font-size: 10px;
+      margin-top: 8px;
+      display: none; }
+    .mc .item a {
+      color: red; }
+  .mc .zc-btn {
+    width: 270px;
+    height: 36px;
+    background: #F00F34;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-left: 90px; }
+    .mc .zc-btn .btn {
+      border: none;
+      background: #F00F34;
+      color: #CECECE;
+      font-size: 16px; }
+
+.footer {
+  width: 990px;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto; }
+  .footer p {
+    padding-top: 10px;
+    color: #666; }
+
+/*# sourceMappingURL=style2.css.map */
