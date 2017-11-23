@@ -292,8 +292,7 @@ i, b, em, strong {
 .navcon {
   width: 1190px;
   height: 35px;
-  margin: 0 auto;
-  background: #eee; }
+  margin: 0 auto; }
   .navcon .qbsp {
     background: #dd0207;
     width: 200px;
@@ -321,6 +320,18 @@ i, b, em, strong {
         border-bottom: 1px solid #323b42; }
         .navcon .qbsp .navlist .item a {
           color: #fff; }
+        .navcon .qbsp .navlist .item .bj {
+          background: url(../images/2.png) no-repeat -3px 10px; }
+        .navcon .qbsp .navlist .item .ptj {
+          background: url(../images/3.png) no-repeat -3px 10px; }
+        .navcon .qbsp .navlist .item .yj {
+          background: url(../images/4.png) no-repeat -3px 10px; }
+        .navcon .qbsp .navlist .item .hj {
+          background: url(../images/5.png) no-repeat -3px 10px; }
+        .navcon .qbsp .navlist .item .lh {
+          background: url(../images/6.png) no-repeat -3px 10px; }
+        .navcon .qbsp .navlist .item .hq {
+          background: url(../images/7.png) no-repeat -3px 10px; }
         .navcon .qbsp .navlist .item h3 {
           font-size: 14px;
           font-weight: 600;
@@ -329,10 +340,8 @@ i, b, em, strong {
           .navcon .qbsp .navlist .item h3 a {
             display: block;
             height: 30px;
-            line-height: 30px; }
-            .navcon .qbsp .navlist .item h3 a .iconfont {
-              font-size: 30px;
-              line-height: 30px; }
+            line-height: 30px;
+            margin-left: 20px; }
         .navcon .qbsp .navlist .item p a {
           padding: 0px 4px;
           font-size: 13px; }
@@ -393,7 +402,7 @@ i, b, em, strong {
     height: 243px;
     position: absolute;
     top: 0;
-    right: 204px;
+    right: 108px;
     z-index: 100; }
   .banner .bannerbox .small-banner .img2 {
     vertical-align: top;
@@ -403,7 +412,7 @@ i, b, em, strong {
     height: 243px;
     position: absolute;
     top: 247px;
-    right: 204px;
+    right: 108px;
     z-index: 100; }
   .banner .bannerbox ol {
     position: absolute;
@@ -481,8 +490,7 @@ i, b, em, strong {
 /*...................floor................*/
 .floorbox {
   width: 100%;
-  min-height: 600px;
-  background: pink; }
+  min-height: 600px; }
   .floorbox .floor {
     margin: 0 auto;
     width: 1190px;
@@ -528,7 +536,8 @@ i, b, em, strong {
       background: orange;
       float: left; }
       .floorbox .floor .leftside .bjt1 {
-        position: relative; }
+        position: relative;
+        background: url(../images/xiao.png) no-repeat -6px 44px; }
         .floorbox .floor .leftside .bjt1 .city {
           width: 186px;
           min-height: 98px;
@@ -548,7 +557,8 @@ i, b, em, strong {
           position: absolute;
           bottom: 0;
           left: 0;
-          padding-left: 10px; }
+          padding-left: 10px;
+          background: url(../images/xiao.png) no-repeat -6px 44px; }
           .floorbox .floor .leftside .bjt1 .smalllogo li {
             float: left;
             margin: 3px 3px; }
@@ -588,12 +598,10 @@ i, b, em, strong {
   .qjd .qjdcont {
     margin: 0 auto;
     width: 1190px;
-    min-height: 300px;
-    background: yellow; }
+    min-height: 300px; }
     .qjd .qjdcont .qjdleft {
       width: 280px;
       min-height: 300px;
-      background: pink;
       float: left; }
     .qjd .qjdcont .qjdcenter {
       width: 630px;
@@ -629,7 +637,6 @@ i, b, em, strong {
     .qjd .qjdcont .qjdright {
       width: 280px;
       min-height: 350px;
-      background: lightblue;
       float: right; }
 
 /*...................ensure...........*/
@@ -683,7 +690,6 @@ i, b, em, strong {
     .footer .footernav dl {
       width: 120px;
       height: 180px;
-      background: blue;
       float: left;
       margin-top: 20px; }
       .footer .footernav dl dd {
@@ -700,7 +706,6 @@ i, b, em, strong {
     .footer .footernav .rightnav {
       width: 1050px;
       height: 180px;
-      background: orange;
       padding-top: 20px;
       margin-left: 20px;
       float: left; }
@@ -780,8 +785,7 @@ i, b, em, strong {
   .bx .bxcont {
     margin: 0 auto;
     width: 1190px;
-    height: 50px;
-    background: pink; }
+    height: 50px; }
     .bx .bxcont p {
       text-align: center;
       line-height: 50px; }
@@ -791,7 +795,6 @@ i, b, em, strong {
     margin: 0 auto;
     width: 1190px;
     height: 50px;
-    background: red;
     overflow: hidden; }
     .bx .bottom ul {
       margin-left: 220px; }
@@ -900,7 +903,6 @@ i, b, em, strong {
         height: 30px;
         line-height: 30px;
         text-align: center;
-        background: yellowgreen;
         z-index: 999;
         font-size: 12px;
         display: none;
@@ -934,8 +936,7 @@ i, b, em, strong {
         height: 40px;
         line-height: 40px;
         display: none;
-        z-index: 5;
-        background: red; }
+        z-index: 5; }
     #lc ul li:nth-of-type(1) {
       background: red; }
     #lc ul li:nth-of-type(4) {

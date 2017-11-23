@@ -37,7 +37,19 @@ $(window).scroll(function(e){
 
 
 
-$("#navli li").hover(function(){
+//$("#navli li").not("#li1").find("a").mouseenter(function(){
+//	$(this) .css("color","red")
+//		    .siblings()    
+//		    .css("color","#666")		   
+//}).mouseleave(function(){
+//	$(this).css("color","black");
+//})
+
+$("#li1 a").mouseenter(function(){
+	$(this).css("color","red")
+})
+
+$("#navli li").mouseleave(function(){
 	$(this).find("a")
 		   .css("color","red")
 		   .siblings()  

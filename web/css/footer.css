@@ -50,7 +50,6 @@
     .footer .footernav dl {
       width: 120px;
       height: 180px;
-      background: blue;
       float: left;
       margin-top: 20px; }
       .footer .footernav dl dd {
@@ -67,7 +66,6 @@
     .footer .footernav .rightnav {
       width: 1050px;
       height: 180px;
-      background: orange;
       padding-top: 20px;
       margin-left: 20px;
       float: left; }
@@ -147,8 +145,7 @@
   .bx .bxcont {
     margin: 0 auto;
     width: 1190px;
-    height: 50px;
-    background: pink; }
+    height: 50px; }
     .bx .bxcont p {
       text-align: center;
       line-height: 50px;
@@ -160,7 +157,6 @@
     margin: 0 auto;
     width: 1190px;
     height: 50px;
-    background: red;
     overflow: hidden; }
     .bx .bottom ul {
       margin-left: 220px; }
@@ -225,7 +221,6 @@
   #classify #classifyright {
     width: 180px;
     height: 490px;
-    background: #eee;
     float: right;
     z-index: 999999999; }
     #classify #classifyright dl dt {

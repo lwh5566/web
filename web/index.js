@@ -75,19 +75,59 @@ window.onload = function(){
 		       .not(".active")
 		       .css("color","black") 
 	})
-	
-	
+//
+$("#hot li").mouseenter(function(){
+	$(this).css("color","red")
+	       .siblings()
+	       .css("color","#2c2c2c")
+	       
+	       
+})
+$("#hot li").mouseleave(function(){
+	$(this).css("color","#2c2c2c")              
+})
+
+$("#hot li").find("a").mouseenter(function(){
+	$(this).css("color","red")	
+})
+$("#hot li").find("a").mouseleave(function(){
+	$(this).css("color","#2c2c2c")
+})
+//
+$(".gd a").mouseenter(function(){
+	$(this).css("color","red")	
+})
+$(".gd a").mouseleave(function(){
+	$(this).css("color","#2c2c2c")
+})
+//白酒
+$("#baijiu li").mouseenter(function(){
+	$(this).css("color","red")
+		    .siblings()
+		    .css("color","#2c2c2c")
+})
+$("#baijiu li").mouseleave(function(){
+	$(this).css("color","#2c2c2c")              
+})
+$("#baijiu li").find("a").mouseenter(function(){
+	$(this).css("color","red")
+		    
+})
+$("#baijiu li").find("a").mouseleave(function(){
+	$(this).css("color","#2c2c2c")
+})
+
 	$("#li1").css({
 		"color":"red"
 	})
-	$("#navli li").hover(function(){
+	$("#navli li").not("#li1").hover(function(){
 		$(this).find("a")
 				.css("color","red")
 		       .siblings()
 		       .not(".li1")
 		       .css("color","black") 
 	})
-	$("#navli li").mouseleave(function(){
+	$("#navli li").not("#li1").mouseleave(function(){
 		$(this).find("a")
 				.css("color","black")
 		       .siblings()
@@ -445,11 +485,12 @@ $(".last li").click(function(){
 $(window).scroll(function(e){
 //console.log($(".floorbox").offset().top)
 	if($(this).scrollTop() > 1300 ){
+		console.log(1)
 	$("#lc").show();	
 }
 })
 $(window).scroll(function(e){
-console.log($(".floorbox").offset().top)
+//console.log($(".floorbox").offset().top)
 	if($(this).scrollTop() > 3800){
 	$("#lc").hide();	
 }

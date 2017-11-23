@@ -128,7 +128,8 @@
     width: 990px;
     min-height: 500px;
     margin: 0 auto;
-    background: url(../images/bg3.jpg) repeat center top; }
+    background: url(../images/bg3.jpg) repeat center top;
+    overflow: hidden; }
     .bannercont .smallpic .all {
       width: 990px;
       min-height: 450px;
